@@ -201,17 +201,20 @@ header{
 
 .games-card-img > img{
     width: 100%;
+    
 }
 
 .games-card-img{
     position: relative;
     margin-bottom: 15px;
     
+    
 }
 
 .img-hover-style img{
     width: 34px;
     height: 34px;
+    
 }
 
 .games-card-img .img-hover-style{
@@ -226,13 +229,15 @@ header{
     flex-direction: column;
     gap: 10px;
     opacity: 0;
-    transition: 0.5s;
+    /* transition: 0.5s; */
     cursor: pointer;
     border-radius: 12px;
     
 }
 
 .games-card:hover .img-hover-style{
+    transition: 0.1s;
+    border: 3px solid #ff42a5;
     opacity: 1;
     cursor: pointer;
     background: linear-gradient(to right top, #051937ae, #051d40a7, #04224aae, #032654bb, #022b5ea6);
@@ -466,6 +471,8 @@ footer .container{
         flex-direction: column;
         padding: 0px 40px;
     }
+
+    
 
     /* play games online section responsive */
     .play-games-online-container{
